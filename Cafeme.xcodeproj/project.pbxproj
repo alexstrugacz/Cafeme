@@ -11,6 +11,7 @@
 		9BA634B229219A94007EB853 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA634B129219A94007EB853 /* ContentView.swift */; };
 		9BA634B429219A95007EB853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA634B329219A95007EB853 /* Assets.xcassets */; };
 		9BA634B729219A95007EB853 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA634B629219A95007EB853 /* Preview Assets.xcassets */; };
+		9BA634BE2921A788007EB853 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA634BD2921A788007EB853 /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9BA634B129219A94007EB853 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9BA634B329219A95007EB853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BA634B629219A95007EB853 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BA634BD2921A788007EB853 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				9BA634B129219A94007EB853 /* ContentView.swift */,
 				9BA634B329219A95007EB853 /* Assets.xcassets */,
 				9BA634B529219A95007EB853 /* Preview Content */,
+				9BA634BD2921A788007EB853 /* MapViewModel.swift */,
 			);
 			path = Cafeme;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				9BA634B229219A94007EB853 /* ContentView.swift in Sources */,
 				9BA634B029219A94007EB853 /* CafemeApp.swift in Sources */,
+				9BA634BE2921A788007EB853 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +274,8 @@
 				DEVELOPMENT_TEAM = 5J3WK595KA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to find coffee shops!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +305,8 @@
 				DEVELOPMENT_TEAM = 5J3WK595KA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to find coffee shops!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

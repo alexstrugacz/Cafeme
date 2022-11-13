@@ -5,17 +5,25 @@
 //  Created by Alex Strugacz on 11/13/22.
 //
 
+import MapKit
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var viewModel = MapViewModel()
+    
+    
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+                .ignoresSafeArea()
+                .accentColor(Color(.systemPink))
+                .onAppear {
+                    viewModel.checkIfLocationServicesIsEnabled()
+                }
         }
-        .padding()
+        
     }
 }
 
@@ -24,3 +32,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
