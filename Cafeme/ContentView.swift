@@ -28,7 +28,29 @@ struct ContentView: View {
                         .cornerRadius(65)
                     .navigationTitle(Text("Map"))
             }
+            Button("Tap to Edit", action: {
+                //code
+            })
+            .frame(width: 300, height: 70)
+            .background(Color(.systemBlue))
+            .cornerRadius(20)
+            .foregroundColor(.white)
+            .fontWeight(.black)
             
+            Spacer()
+            
+            
+            Button("Submit Order", action: {
+                //code
+            })
+            .frame(width: 300, height: 70, alignment: .center)
+            .background(Color.green)
+            .fontWeight(.black)
+            .foregroundColor(.white)
+            .cornerRadius(20)
+            .padding(.top)
+            
+            Spacer()
         }
         
     }
