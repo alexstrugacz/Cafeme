@@ -14,14 +14,21 @@ struct ContentView: View {
     
     
     var body: some View {
-        
+    
         VStack {
-            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-                .ignoresSafeArea()
-                .accentColor(Color(.systemPink))
-                .onAppear {
-                    viewModel.checkIfLocationServicesIsEnabled()
-                }
+        
+            NavigationView() {
+                
+                Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+                    .padding()
+                        .accentColor(Color(.systemPink))
+                        .onAppear {
+                            viewModel.checkIfLocationServicesIsEnabled()
+                        }
+                        .cornerRadius(65)
+                    .navigationTitle(Text("Map"))
+            }
+            
         }
         
     }
@@ -30,6 +37,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            
     }
 }
 
