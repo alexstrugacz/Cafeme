@@ -8,10 +8,12 @@
 import MapKit
 import SwiftUI
 
+
+
 struct ContentView: View {
     
     @StateObject private var viewModel = MapViewModel()
-    
+    @State private var username = ""
     
     var body: some View {
     
@@ -26,19 +28,18 @@ struct ContentView: View {
                             viewModel.checkIfLocationServicesIsEnabled()
                         }
                         .cornerRadius(65)
-                    .navigationTitle(Text("Map"))
+                    .navigationTitle(Text("Cafeme"))
             }
-            Button("Tap to Edit", action: {
-                //code
-            })
-            .frame(width: 300, height: 70)
-            .background(Color(.systemBlue))
-            .cornerRadius(20)
-            .foregroundColor(.white)
-            .fontWeight(.black)
+            
             
             Spacer()
             
+            TextField("Enter a specific cafe name...", text: $username)
+                .scenePadding()
+                .frame(width: 300, height: 100, alignment: .center)
+                .background(.thickMaterial)
+                .cornerRadius(60)
+                .multilineTextAlignment(.center)
             
             Button("Submit Order", action: {
                 //code
